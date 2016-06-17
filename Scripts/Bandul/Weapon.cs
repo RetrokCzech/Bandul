@@ -15,7 +15,7 @@ namespace Miko
         
         private string name;
         
-        Enchant enchant;
+        WeaponEnchant enchant;
         
         private Image weapon_image;
         
@@ -27,7 +27,7 @@ namespace Miko
         /// <param name="name">NAME OF THE WEAPON</param>
         /// <param name="image">IMAGE OF THE WEAPON</param>
         /// <param name="enchant">ENCHANT OF THE WEAPON (ANOTHER CLASS)</param>
-        public Weapon(int dmg, int durability, string name, Image image, Enchant enchant)
+        public Weapon(int dmg, int durability, string name, Image image, WeaponEnchant enchant)
         {
             this.dmg = dmg;
             this.durability = durability;
@@ -71,7 +71,7 @@ namespace Miko
         /// <summary>
         /// Property of the Enchant of weapon... 
         /// </summary>
-        public Enchant Enchant
+        public WeaponEnchant Enchant
         {
             get { return enchant; }
         }
